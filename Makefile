@@ -1,7 +1,7 @@
 CC=clang
 C_FLAGS= -Wall -Wextra -Werror -pedantic
 EXE=socket_p
-O_FILE=main.o
+O_FILE=socket_handle.o
 
 .PHONY: all
 all: $(EXE)

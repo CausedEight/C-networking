@@ -17,7 +17,9 @@
 
 ### Key terms-
 - Socket: A system routine with it's adequetly named function ```socket()``` that returns a socket file descriptor. In other words, it is also an end-point for a communication channel.
-- Stream Socket: An ensured connection stream that outputs data in a certain order and can recieve data in the order it was sent.
-- Datagram Socket:  
+- Stream Socket: An ensured connection stream that outputs data in a certain order and can recieve data in the order it was sent. Used in applications where precision of data is crucial. This is done through TCP (Transmission Control Protocol)
+- Datagram Socket: A more unprecise version of packet delivery as a packet may or may not arrive. The packet could also arrive out of order. This is through a process called UDP (User Datagram Protocol). Datagram sockets are also "connectionless" which allows them to quickly connect and disconnect with no real harm. Used in applications where packet loss is ok such as streaming or gaming. If you wish for packet arrival with UDP, you need to implement some kind of ACK checking.
+- Data Encapsulation: You have some data. You add layers of headers and protocols to your data so a different computer can handle and read receivied data. 
+![alt text](./src/image.png)
 
 </div>
